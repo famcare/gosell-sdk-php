@@ -1,34 +1,36 @@
 {
-    "name": "tappayments/gosell",
-    "license": "MIT",
-    "minimum-stability": "stable",
-    "authors": [
-        {
-            "name": "Waqas Tanoli",
-            "email": "w.tanoli@tap.company"
-        }
-    ],
-    "require": {
-    	 "php": ">=5.6.0",
-        "guzzlehttp/guzzle": "^6.5|^7.0"
+  "name": "tappayments/gosell",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Waqas Tanoli",
+      "email": "w.tanoli@tap.company"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "guzzlehttp/guzzle": "^6.5|^7.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.*",
+    "phpunit/phpunit": ">=5.7",
+    "php-coveralls/php-coveralls": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "TapPayments\\": "src/"
     },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "3.*",
-        "phpunit/phpunit": "^5.7",
-        "php-coveralls/php-coveralls": "^2.2"
-    },
-    "autoload": {
-	    "psr-4": {
-	      "TapPayments\\": "src/"
-	    },
-         "classmap": [
-          "src/GoSell.php",
-          "src/Customers.php",
-          "src/Authorize.php",
-          "src/Charges.php",
-          "src/Refunds.php"
-        ]
-	  },
+    "classmap": [
+      "src/GoSell.php",
+      "src/Customers.php",
+      "src/Authorize.php",
+      "src/Charges.php",
+      "src/Refunds.php",
+      "src/Cards.php",
+      "src/Subscriptions.php"
+    ]
+  },
   "autoload-dev": {
     "psr-4": {
       "TapPayments\\": [
